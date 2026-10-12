@@ -1,0 +1,39 @@
+
+import pandas as pd
+print("----- LIST -----")
+names = ["Vaishu", "Rahul", "Priya"]
+print(names)
+print(names[0])
+names.append("Sneha")
+print("After adding a name:", names)
+print("\n----- TUPLE -----")
+subjects = ("Python", "SQL", "Java")
+print(subjects)
+print(subjects[0])
+print("Number of subjects:", len(subjects))
+print("\n----- DICTIONARY -----")
+student = {
+    "name": "Vaishu",
+    "age": 20,
+    "college": "Matrusri",
+    "marks": 85
+}
+print(student)
+print("Name:", student["name"])
+print("Marks:", student["marks"])
+student["marks"] = 95
+print("Updated marks:", student["marks"])
+student["city"] = "Hyderabad"
+print(student)
+print("\n----- PANDAS -----")
+
+data = {
+    "Name": ["Vaishu", "Rahul", "Priya"],
+    "Marks": [85, 70, 95],
+    "Age": [20, 21, 20]
+}
+df = pd.DataFrame(data)
+print(df)
+print("\n----- STUDENT MARKS -----")
+
+print(df["Marks"])
