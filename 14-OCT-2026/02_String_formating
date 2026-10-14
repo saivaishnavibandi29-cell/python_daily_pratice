@@ -1,0 +1,24 @@
+
+# String Formatting in Python
+
+name = "Vaishu"
+age = 20
+city = "Hyderabad"
+course = "Python"
+
+
+print("Using f-strings:")
+print(f"My name is {name}.")
+print(f"I am {age} years old.")
+print(f"I live in {city}.")
+
+
+print("\nUsing format() method:")
+print("My name is {} and I am {} years old.".format(name, age))
+print("I am learning {} in {}.".format(course, city))
+
+
+print("\nUsing % formatting:")
+print("My name is %s." % name)
+print("I am %d years old." % age)
+print("I live in %s." % city)

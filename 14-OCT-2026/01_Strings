@@ -1,0 +1,24 @@
+
+text = "  hello python programming  "
+print("Original string:", text)
+print("\n--- Indexing ---")
+print("First character:", text[2])
+print("Last character:", text[-3])
+print("\n--- Slicing ---")
+print("First five characters:", text[2:7])
+print("Python word:", text[8:14])
+print("Reverse string:", text[::-1])
+print("\n--- String Immutability ---")
+name = "Python"
+name = "J" + name[1:]
+print("New string:", name)
+print("\n--- String Methods ---")
+print("Lowercase:", text.lower())
+print("Uppercase:", text.upper())
+print("Title case:", text.title())
+print("After strip:", text.strip())
+print("Find python:", text.find("python"))
+print("Index of programming:", text.index("programming"))
+print("Count of m:", text.count("m"))
+print("Starts with spaces:", text.startswith("  "))
+print("Ends with spaces:", text.endswith("  "))
