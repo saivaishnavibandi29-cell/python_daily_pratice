@@ -1,0 +1,27 @@
+
+
+def greet():
+    print("Hello! Welcome to Python")
+
+greet()
+
+def add(a, b):       # a and b are parameters
+    print("Sum =", a + b)
+
+add(10, 20)  
+
+def student(name, age):
+    print("Name:", name)
+    print("Age:", age)
+student("Vaishu", 20)
+
+def display(name, course):
+    print("Name:", name)
+    print("Course:", course)
+display(course="CSE", name="Vaishu")
+
+def welcome(name="Student"):
+    print("Welcome", name)
+welcome("Vaishu")
+welcome()
+

@@ -1,0 +1,19 @@
+numbers=[10,20,30,40]
+
+
+def total(*numbers):
+    print("Numbers:", numbers)
+    print("Total:", sum(numbers))
+
+total(10, 20, 30, 40)
+
+
+def details(**info):
+    print(info)
+details(name="Vaishu", age=20, course="CSE")
+def calculate(a, b=5):
+    print("Addition:", a + b)
+    print("Multiplication:", a * b)
+
+calculate(10)
+calculate(10, 20)

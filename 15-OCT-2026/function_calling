@@ -1,0 +1,22 @@
+
+# Function 1
+def add(a, b):
+    return a + b
+
+# Function 2
+def multiply(a, b):
+    return a * b
+
+# Function 3: Calling other functions
+def calculate():
+    x = 10
+    y = 20
+
+    sum_result = add(x, y)
+    product_result = multiply(x, y)
+
+    print("Addition:", sum_result)
+    print("Multiplication:", product_result)
+
+# Calling the main function
+calculate()
