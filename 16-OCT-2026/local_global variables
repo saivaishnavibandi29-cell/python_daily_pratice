@@ -1,0 +1,41 @@
+
+college_name = "Matrusri Engineering College"
+total_students = 500
+
+def student_details():
+  
+    name = "Vaishu"
+    age = 20
+
+    print("Inside student_details function:")
+    print("Student Name:", name)
+    print("Student Age:", age)
+    print("College Name:", college_name)
+    print("Total Students:", total_students)
+
+
+def display_marks():
+   
+    marks = 90
+
+    print("\nInside display_marks function:")
+    print("Marks:", marks)
+    print("College Name:", college_name)
+
+
+def update_students():
+    global total_students
+    total_students = 600
+
+    print("\nInside update_students function:")
+    print("Updated Total Students:", total_students)
+
+
+# Calling functions
+student_details()
+display_marks()
+update_students()
+
+print("\nOutside all functions:")
+print("College Name:", college_name)
+print("Total Students:", total_students)
