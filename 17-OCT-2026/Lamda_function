@@ -1,0 +1,31 @@
+# 1. Lambda function to add two numbers
+add = lambda a, b: a + b
+print("Addition:", add(10, 20))
+
+# 2. Lambda function to multiply two numbers
+multiply = lambda a, b: a * b
+print("Multiplication:", multiply(5, 4))
+
+# 3. Lambda function to find the square
+square = lambda n: n * n
+print("Square:", square(6))
+
+# 4. Lambda function to find the largest number
+largest = lambda a, b: a if a > b else b
+print("Largest Number:", largest(25, 40))
+
+# 5. Lambda function to check even or odd
+check_number = lambda n: "Even" if n % 2 == 0 else "Odd"
+print("Number Type:", check_number(7))
+
+# 6. Lambda function to calculate the average
+average = lambda a, b, c: (a + b + c) / 3
+print("Average:", average(80, 90, 70))
+
+# 7. Lambda function to calculate the discount price
+discount = lambda price, percent: price - (price * percent / 100)
+print("Final Price:", discount(1000, 20))
+
+# 8. Lambda function to convert Celsius to Fahrenheit
+fahrenheit = lambda c: (c * 9/5) + 32
+print("Temperature:", fahrenheit(30))
