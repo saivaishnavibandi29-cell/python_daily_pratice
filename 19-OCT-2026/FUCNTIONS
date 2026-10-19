@@ -1,0 +1,35 @@
+# Global variable
+college_name = "Matrusri Engineering College"
+
+# Function with default argument
+def calculate_total(m1, m2, m3):
+    total = m1 + m2 + m3
+    return total
+
+# Function with parameters and return statement
+def calculate_average(total, subjects=3):
+    average = total / subjects
+    return average
+
+# Function calling another function
+def display_result(name, m1, m2, m3):
+
+    # Local variable
+    student_name = name
+
+    total = calculate_total(m1, m2, m3)
+    average = calculate_average(total)
+
+    print("\nCollege:", college_name)
+    print("Student Name:", student_name)
+    print("Total Marks:", total)
+    print("Average Marks:", average)
+
+    if average >= 40:
+        print("Result: Pass")
+    else:
+        print("Result: Fail")
+
+# Calling the function with arguments
+display_result("Sai", 80, 75, 90)
+display_result("Sathwik", 30, 35, 25)
