@@ -1,0 +1,11 @@
+# Function using any()
+
+def check_pass(marks):
+    result = any(mark >= 40 for mark in marks)
+    return result
+
+marks = [20, 25, 35, 45, 30]
+
+answer = check_pass(marks)
+
+print("Is at least one student passed?", answer)

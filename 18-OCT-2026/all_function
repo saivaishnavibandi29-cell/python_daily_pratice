@@ -1,0 +1,11 @@
+# Function using all()
+
+def check_all_passed(marks):
+    result = all(mark >= 40 for mark in marks)
+    return result
+
+marks = [65, 75, 80, 90, 55]
+
+answer = check_all_passed(marks)
+
+print("Did all students pass?", answer)

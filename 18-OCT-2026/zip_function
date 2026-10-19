@@ -1,0 +1,15 @@
+# Function using zip()
+
+def student_details(names, marks):
+    result = list(zip(names, marks))
+    return result
+
+names = ["Sai", "Vaishnavi", "Sathwik", "Rithwik"]
+marks = [85, 90, 78, 95]
+
+answer = student_details(names, marks)
+
+print("Student details:")
+
+for name, mark in answer:
+    print(name, "scored", mark, "marks")

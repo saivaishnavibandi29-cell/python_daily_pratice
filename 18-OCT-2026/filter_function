@@ -1,0 +1,12 @@
+# Function using filter()
+
+def even_numbers(numbers):
+    result = list(filter(lambda x: x % 2 == 0, numbers))
+    return result
+
+numbers = [10, 15, 20, 25, 30, 35, 40]
+
+answer = even_numbers(numbers)
+
+print("Original numbers:", numbers)
+print("Even numbers:", answer)

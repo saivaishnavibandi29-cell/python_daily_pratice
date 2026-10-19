@@ -1,0 +1,12 @@
+# Function using map()
+
+def square_numbers(numbers):
+    result = list(map(lambda x: x * x, numbers))
+    return result
+
+numbers = [1, 2, 3, 4, 5]
+
+answer = square_numbers(numbers)
+
+print("Original numbers:", numbers)
+print("Square numbers:", answer)
