@@ -1,0 +1,35 @@
+print("STUDENT ATTENDANCE SYSTEM")
+
+total_students = 8
+eligible_students = 0
+absent_students = 0
+
+for student in range(1, total_students + 1):
+    print("\nStudent Number:", student)
+
+    attendance = input("Enter attendance (present/absent): ").lower()
+
+    if attendance == "absent":
+        print("Student is absent.")
+        print("Skipping this student.")
+        absent_students = absent_students + 1
+        continue
+
+    if attendance != "present":
+        print("Invalid attendance entered!")
+        print("Skipping this student.")
+        continue
+
+    marks = int(input("Enter student marks: "))
+
+    if marks >= 35:
+        print("Result: Pass")
+        eligible_students = eligible_students + 1
+    else:
+        print("Result: Fail")
+
+print("\nATTENDANCE SUMMARY")
+print("Total students:", total_students)
+print("Absent students:", absent_students)
+print("Eligible students who passed:", eligible_students)
+print("Program completed successfully!")

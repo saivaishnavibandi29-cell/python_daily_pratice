@@ -1,0 +1,30 @@
+print("STUDENT RESULT SYSTEM")
+
+total_students = 10
+count = 0
+
+for student in range(1, total_students + 1):
+    print("\nStudent Number:", student)
+
+    marks = int(input("Enter student marks: "))
+
+    if marks < 0 or marks > 100:
+        print("Invalid marks entered!")
+        print("Stopping the program.")
+        break
+
+    if marks >= 35:
+        print("Result: Pass")
+    else:
+        print("Result: Fail")
+
+    count = count + 1
+
+    if marks == 100:
+        print("Excellent! Full marks obtained.")
+        print("Stopping the loop.")
+        break
+
+print("\nRESULT SUMMARY")
+print("Number of students processed:", count)
+print("Program completed.")
