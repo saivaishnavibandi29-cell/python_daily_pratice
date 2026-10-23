@@ -1,0 +1,58 @@
+
+# Student Marks and Result Management System
+
+print("===== STUDENT RESULT SYSTEM =====")
+
+students = ["Ravi", "Priya", "Kiran", "Anu", "Rahul"]
+marks = [85, 32, 76, 90, 45]
+
+# Using for loop
+print("\nStudent Results:")
+
+for i in range(len(students)):
+    print(students[i], "scored", marks[i])
+
+# Using while loop
+print("\nCounting from 1 to 5:")
+
+count = 1
+while count <= 5:
+    print(count)
+    count += 1
+
+# Using continue statement
+print("\nMarks greater than or equal to 40:")
+
+for mark in marks:
+    if mark < 40:
+        continue
+    print(mark)
+
+# Using break statement
+print("\nSearching for marks below 35:")
+
+for mark in marks:
+    if mark < 35:
+        print("Found a low mark:", mark)
+        break
+else:
+    print("No low marks found")
+
+# Using else with a loop
+print("\nChecking all students:")
+
+for name in students:
+    print("Checking student:", name)
+else:
+    print("All students have been checked!")
+
+# Calculating total marks using a loop
+total = 0
+
+for mark in marks:
+    total += mark
+
+print("\nTotal marks:", total)
+print("Average marks:", total / len(marks))
+
+print("\nProgram completed successfully!")
