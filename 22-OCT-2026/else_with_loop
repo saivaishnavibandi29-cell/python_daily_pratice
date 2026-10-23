@@ -1,0 +1,19 @@
+# Program to demonstrate else with a for loop
+
+print("Student Marks Checking Program")
+
+marks = [45, 67, 89, 32, 76]
+passing_marks = 40
+
+for mark in marks:
+    print("Checking marks:", mark)
+
+    if mark < passing_marks:
+        print("Student failed in this subject")
+    else:
+        print("Student passed in this subject")
+
+else:
+    print("\nAll student marks have been checked.")
+
+print("Program completed successfully!")
